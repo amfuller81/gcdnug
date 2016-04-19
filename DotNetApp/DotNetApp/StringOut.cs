@@ -8,6 +8,7 @@
         public static string GetOutput()
         {
             return GetGreeting();
+            
         }
 
         private static string GetGreeting()
