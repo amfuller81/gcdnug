@@ -7,26 +7,23 @@
     {
         public static string GetOutput()
         {
-            var ouput = GetGreeting();
-            return ouput;
+            return GetGreeting();
         }
 
         private static string GetGreeting()
         {
-            const string s = "Hello, ";
-            return s.GetAudience();
+            return "Hello, ".GetAudience();
         }
 
         private static string GetAudience(this string s)
         {
-            s += "Gulf Coast .NET User Group";
-            return s.GetPunctuation();
+            
+            return s += "Gulf Coast .NET User Group".GetPunctuation();
         }
 
         private static string GetPunctuation(this string s)
-        {
-            s += "!";
-            return s;
+        {        
+            return s += "!";
         } 
     }
 }
