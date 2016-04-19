@@ -19,7 +19,7 @@ namespace DotNetApp
 
         private static string GetGreeting()
         {
-            var s = "Hello, ".ToUpper();           
+            var s = "Hello, ";           
             return s.GetAudience().GetPunctuation();
         }
 
