@@ -12,6 +12,8 @@ namespace DotNetApp
         {
             var output = StringOut.GetOutput();
             Console.WriteLine(output);
+            Console.WriteLine("\n\nPress any key to continue...");
+            Console.ReadKey(true);
         }
     }
 }

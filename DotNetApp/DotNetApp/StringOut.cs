@@ -13,7 +13,6 @@ namespace DotNetApp
     {
         public static string GetOutput()
         {
-
             return string.Format("{0} {1}{2}", GetGreeting(), GetAudience(), GetPunctuation());
         }
 
