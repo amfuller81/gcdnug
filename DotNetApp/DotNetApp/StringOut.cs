@@ -13,22 +13,26 @@ namespace DotNetApp
     {
         public static string GetOutput()
         {
-            return string.Format("{0} {1}{2}", GetGreeting(), GetAudience(), GetPunctuation());
+            var ouput = GetGreeting();
+            return ouput;
         }
 
         private static string GetGreeting()
         {
-            return "Hello";
+            var s = "Hello, ".ToUpper();           
+            return s.GetAudience().GetPunctuation();
         }
 
-        private static string GetAudience()
+        private static string GetAudience(this string s)
         {
-            return "GCDNUG";
+            s += "GCDNUG";
+            return s;
         }
 
-        private static string GetPunctuation()
+        private static string GetPunctuation(this string s)
         {
-            return "!";
+            s += "!";
+            return s;
         } 
     }
 }
