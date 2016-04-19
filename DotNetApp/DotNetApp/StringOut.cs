@@ -13,7 +13,7 @@
 
         private static string GetGreeting()
         {
-            var s = "Hello, ";           
+            const string s = "Hello, ";
             return s.GetAudience();
         }
 
