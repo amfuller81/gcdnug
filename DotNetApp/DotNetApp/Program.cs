@@ -10,7 +10,7 @@ namespace DotNetApp
     {
         static void Main(string[] args)
         {
-            var output = "Hello GCDNUG!";
+            var output = StringOut.GetOutput();
             Console.WriteLine(output);
         }
     }

@@ -6,7 +6,30 @@ using System.Threading.Tasks;
 
 namespace DotNetApp
 {
-    class StringOut
+    /// <summary>
+    /// Gets the string to ouput
+    /// </summary>
+    public static class StringOut
     {
+        public static string GetOutput()
+        {
+
+            return string.Format("{0} {1}{2}", GetGreeting(), GetAudience(), GetPunctuation());
+        }
+
+        private static string GetGreeting()
+        {
+            return "Hello";
+        }
+
+        private static string GetAudience()
+        {
+            return "GCDNUG";
+        }
+
+        private static string GetPunctuation()
+        {
+            return "!";
+        } 
     }
 }
