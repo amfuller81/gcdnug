@@ -7,8 +7,7 @@
     {
         public static string GetOutput()
         {
-            return GetGreeting();
-            
+            return GetGreeting();          
         }
 
         private static string GetGreeting()
