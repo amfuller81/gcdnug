@@ -25,7 +25,7 @@ namespace DotNetApp
 
         private static string GetAudience(this string s)
         {
-            s += "GCDNUG";
+            s += "Gulf Coast .NET User Group";
             return s;
         }
 
