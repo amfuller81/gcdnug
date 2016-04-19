@@ -9,7 +9,8 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello GCDNUG!");
+            var output = "Hello GCDNUG!";
+            Console.WriteLine(output);
         }
     }
 }
