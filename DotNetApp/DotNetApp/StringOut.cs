@@ -14,13 +14,13 @@
         private static string GetGreeting()
         {
             var s = "Hello, ";           
-            return s.GetAudience().GetPunctuation();
+            return s.GetAudience();
         }
 
         private static string GetAudience(this string s)
         {
             s += "Gulf Coast .NET User Group";
-            return s;
+            return s.GetPunctuation();
         }
 
         private static string GetPunctuation(this string s)
